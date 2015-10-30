@@ -10,4 +10,15 @@ class Contact
 		@id = @@id
 		@@id +=1
 	end
+
+	def print_main_menu
+    puts "1. Add a contact"
+    puts "2. Modify a contact"
+    puts "3. Display all contacts"
+    puts "4. Display contact"
+    puts "5. Display contact attributes"
+    puts "6. Delete contact"
+    puts "7. Exit"
+  end
+
 end
