@@ -21,4 +21,20 @@ class Contact
     puts "7. Exit"
   end
 
+  def add_contact
+  	print "First name: "
+  	first.name = gets.chomp
+
+  	print "Last name: "
+  	last.name = gets.chomp
+
+  	print "Email: "
+  	email = gets.chomp
+
+  	print "Notes: "
+  	notes = gets.chomp
+
+  	Contact.create(first_name, last_name, email, notes)
+  end
+
 end
